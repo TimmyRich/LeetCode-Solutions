@@ -17,11 +17,9 @@ def twoSum(nums, target):
   """
   diffMap = {}
   for index, num in enumerate(nums):
-    print(diffMap)
-    diff = target - num
-    diffMap[diff] = index
     if num in diffMap:
       return [diffMap[num], index]
+    diffMap[target - num] = index
   
   
 
