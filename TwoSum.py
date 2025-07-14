@@ -21,8 +21,6 @@ def twoSum(nums, target):
       return [diffMap[num], index]
     diffMap[target - num] = index
   
-  
-
 input = ([2,7,11,15], 9)
 expectedOutput = [0, 1]
 test(twoSum, input, expectedOutput)
